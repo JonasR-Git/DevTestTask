@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateImages(){
         //set huge image for lightbox
         mainImageLink.href = thumbnails[0].CDATA_SECTION_NODE.hugeSrc;
-        // set src to large to be displayed big 
+        // set src to large to be displayed big. 
         mainImage.src = thumbnails[0].CDATA_SECTION_NODE.largeSrc;
     }
 }
