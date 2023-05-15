@@ -256,6 +256,13 @@
     margin: 83px 0 155px;
 }
 
+.product-custom__swiper-pagination {
+    bottom: -20px;
+    position: relative !important;
+    margin: 10px 0 10px 0;
+    height: 10px;
+}
+
 @media (min-width: 1200px) {
 
     #thumbnailsContainerSmall {
@@ -271,7 +278,7 @@
     .product-custom__photos-details-wrapper {
         flex-direction: column;
     }
-    
+
     .product-custom__details {
         margin-left: 0;
     }
