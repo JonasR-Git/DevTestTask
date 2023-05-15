@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
         mainImageLink.href = thumbnails[0].CDATA_SECTION_NODE.hugeSrc;
         // set src to large to be displayed big. Main Image is the first one in the thumbnails array
         mainImage.src = thumbnails[0].CDATA_SECTION_NODE.largeSrc;
-        mainImage.alt = th
+        mainImage.alt = thumbnails[0].alt;
+
+        
     }
 }
