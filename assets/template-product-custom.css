@@ -345,6 +345,10 @@
         margin-top: 8px;
     }
 
+    .product-custom__details-container {
+        margin: 26px 12px 25px 14px;
+    }
+
     #thumbnailsContainerSmall {
         width: 100%;
     }
