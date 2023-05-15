@@ -67,6 +67,8 @@ document.addEventListener("DOMContentLoaded", function () {
     function handleScreenSize() {
         if (window.innerWidth < 1200){
             initializeSwiper();
+        } else {
+            //remove swiper
         }
     }
 
