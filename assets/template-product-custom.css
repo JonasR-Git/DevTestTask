@@ -23,3 +23,11 @@
     gap: 15px;
     justify-content: center;
 }
+
+.product-custom__thumbnail{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 3px;
+}
