@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
         mainImage.alt = thumbnails[0].alt;
 
         // iterate throught the thumbnails and set display none for every one > index 4, so only main image + 4 small previews are visible
-        thumbnails.forEach()
+        thumbnails.forEach((img, index) =>{
+            
+        })
     }
 }
