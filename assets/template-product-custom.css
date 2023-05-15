@@ -209,3 +209,9 @@
 .product-custom__award-container {
     display: flex;
 }
+
+.product-custom__award-image {
+    width: 57px;
+    height: 57px;
+    margin-right: 20px
+}
