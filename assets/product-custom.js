@@ -14,5 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         thumbnails.push(thumbnails.shift()); // Moves the first element to the end
     });
 
-    
+    function updateImages(){
+        
+    }
 }
