@@ -331,3 +331,14 @@
     }
 }
 
+@media (max-width: 860px) {
+    .product-custom__extra-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 29px;
+        margin: 36 auto 0;
+    }
+}
+
+
+
