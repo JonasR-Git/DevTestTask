@@ -34,4 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+
+    // Initial set the right display none and block
+    updateImage();
 });
