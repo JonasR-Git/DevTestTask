@@ -372,6 +372,14 @@
         margin-left: 10px;
     }
 
+    .product-custom__price-container {
+        margin-bottom: 21px;
+    }
+
+    .product-custom__award-text-container{
+        justify-content: space-between; 
+    }
+
     #thumbnailsContainerSmall {
         width: 100%;
     }
