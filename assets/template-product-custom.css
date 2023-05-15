@@ -215,3 +215,9 @@
     height: 57px;
     margin-right: 20px
 }
+
+.product-custom__award-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
