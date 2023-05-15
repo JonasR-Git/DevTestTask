@@ -186,3 +186,7 @@
     color: #000000;
     margin: 0 0 20px 0;
 }
+
+.product-custom__details-container {
+    margin: 18px 23px 25px 28px;
+}
