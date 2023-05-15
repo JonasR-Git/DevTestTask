@@ -16,4 +16,9 @@
     flex-direction: row-reverse;
 }
 
-.
+.product-custom__thumbnails-container{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    height: ;
+}
