@@ -403,7 +403,7 @@
 
 @media (max-width: 360px) {
     .product-custom__details-container {
-        margin: 25px auto;
+        margin: 25px 12px;
         max-width: 324px;
         width: 95vw;
     }
