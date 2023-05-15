@@ -43,6 +43,12 @@
     border-radius: 5px;
 }
 
+.main-image-button-container,
+.product-custom__main-image-container {
+    width: 480px;
+    height: 480px;
+}
+
 .product-custom__image-navigation {
     display: flex;
     justify-content: center;
