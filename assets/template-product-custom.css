@@ -270,6 +270,20 @@
     opacity: 1;
 }
 
+.product-custom__thumbnail-swiper {
+    width: 350px !important;
+    height: 350px !important;
+}
+
+.product-custom__thumbnail-swiper a img{
+    border-radius: 5px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #E5E5E5 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 3px 6px #00000029;
+}
+
 
 @media (min-width: 1200px) {
 
