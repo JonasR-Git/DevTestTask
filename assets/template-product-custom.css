@@ -221,3 +221,14 @@
     flex-direction: column;
     justify-content: space-evenly;
 }
+
+.product-custom__award-heading {
+    text-align: left;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Montserrat';
+    letter-spacing: 0px;
+    color: #000;
+    margin: 0;
+}
