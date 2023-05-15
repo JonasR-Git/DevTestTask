@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function destroySwiper() {
-        if (swiper)  {
+        if (swiper) {
             swiper.destroy();
             swiper = null;
         }
