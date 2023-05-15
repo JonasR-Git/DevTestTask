@@ -344,6 +344,10 @@
     .product-custom__container {
         margin-top: 8px;
     }
+
+    #thumbnailsContainerSmall {
+        width: 100%;
+    }
 }
 
 
