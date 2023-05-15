@@ -5,4 +5,8 @@
     margin: 43px auto 0;
 }
 
-.product-custom__photos-details-wrap
+.product-custom__photos-details-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
