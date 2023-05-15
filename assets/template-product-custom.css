@@ -349,6 +349,12 @@
         margin: 26px 12px 25px 14px;
     }
 
+    .product-custom__add-to-cart {
+        width: 324px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
     #thumbnailsContainerSmall {
         width: 100%;
     }
