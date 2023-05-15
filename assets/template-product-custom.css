@@ -356,6 +356,22 @@
         line-height: 19px;
     }
 
+    .product-custom__title {
+        margin: 0 0 10px;
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+    .product-custom__subtitle {
+        margin: 0 0 20px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .product-custom__price-note {
+        margin-left: 10px;
+    }
+
     #thumbnailsContainerSmall {
         width: 100%;
     }
