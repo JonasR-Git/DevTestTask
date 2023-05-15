@@ -8,10 +8,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     prevButton.addEventListener('click', () => {
         thumbnails.unshift(thumbnails.pop()); // Moves the last element to the start
+        updateImages()
     });
 
     nextButton.addEventListener('click', () => {
         thumbnails.push(thumbnails.shift()); // Moves the first element to the end
+        updateImages()
     });
 
     function updateImages(){
