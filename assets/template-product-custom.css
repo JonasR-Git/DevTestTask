@@ -347,6 +347,7 @@
 
     .product-custom__details-container {
         margin: 26px 12px 25px 14px;
+        max-width: 324px;
     }
 
     .product-custom__cart-form,
