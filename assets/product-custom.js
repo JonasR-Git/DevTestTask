@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         mainImage.src = thumbnails[0].CDATA_SECTION_NODE.largeSrc;
         mainImage.alt = thumbnails[0].alt;
 
-        // iterate throught the thumbnails and set 
+        // iterate throught the thumbnails and set display none for every one > index 4, so only main image + 4 small previews are visible
+        thumbnails.forEach()
     }
 }
