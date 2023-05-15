@@ -11,6 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
     nextButton.addEventListener('click', () =>{
-        thumbnails.
+        thumbnails.push(thumbnails.shift()); // Moves the first element to the end
     })
 }
