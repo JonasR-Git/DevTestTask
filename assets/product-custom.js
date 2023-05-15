@@ -10,5 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         thumbnails.unshift(thumbnails.pop()); // Moves the last element to the start
     })
 
-    nextButton.addEventListener('click')
+    nextButton.addEventListener('click', () =>{
+        thumbnails.
+    })
 }
