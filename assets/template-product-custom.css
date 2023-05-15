@@ -405,6 +405,7 @@
         .product-custom__details-container {
             margin: 25px 12px;
             max-width: 324px;
+            width: 85%;
         }
     } 
 
