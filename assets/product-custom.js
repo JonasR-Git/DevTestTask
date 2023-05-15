@@ -6,6 +6,32 @@ document.addEventListener("DOMContentLoaded", function () {
     const mainImage = document.querySelector('.product-custom__main-image');
     const mainImageLink = document.querySelector('.product-custom__main-image-container a');
 
+    function initializeSwiper() {
+        swiper = new Swiper('.product-custom__thumbnails-swiper-container', {
+          centeredSlides: true,
+          spaceBetween: 7,
+          slidesPerView: 'auto',
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination'
+          },
+          breakpoints: {
+            460: {
+              spaceBetween: 7,
+            },
+            640: {
+              spaceBetween: 20,
+            },
+            768: {
+              spaceBetween: 40,
+            },
+            1200: {
+              spaceBetween: 60,
+            },
+          }
+        });
+      }
+
     prevButton.addEventListener('click', () => {
         thumbnails.unshift(thumbnails.pop()); // Moves the last element to the start
         updateImages()
@@ -37,4 +63,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Initial set the right display none and block
     updateImages();
+    initializeSwiper();
 });
