@@ -15,6 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function updateImages(){
-        
+        mainImageLink.href = thumbnails[0]
     }
 }
