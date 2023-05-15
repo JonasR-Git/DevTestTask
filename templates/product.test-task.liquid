@@ -1,0 +1,51 @@
+{{ 'template-product-custom.css' | asset_url | stylesheet_tag }}
+{{ 'product-custom.js' | asset_url | script_tag }}
+
+<head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+</head>
+
+<div class="product-custom__container">
+  <div class="product-custom__photos-details-wrapper">
+    <div class="product-custom__photos">
+      <div class="product-custom__main-image-button-container">
+        <div class="product-custom__main-image-container">
+          <a
+            href="{{ product.images.first | img_url: '1024x1024' }}"
+            data-lightbox="product-gallery"
+            data-id="0">
+            <img
+              class="product-custom__main-image"
+              src="{{ product.images.first | img_url: '480x480' }}"
+              data-small-src="{{ product.images.first | img_url: '100x100' }}"
+              data-large-src="{{ product.images.first | img_url: '480x480' }}"
+              data-huge-src="{{ image | img_url: '1024x1024' }}"
+              alt="{{ product.images.first.alt | escape }}" />
+          </a>
+        </div>
+        <div class="product-custom__image-navigation">
+          <div class="product-custom__arrow product-custom__arrow--prev"></div>
+          <div class="product-custom__arrow product-custom__arrow--next"></div>
+        </div>
+      </div>
+
+      <div class="product-custom__thumbnails-container">
+        {% for image in product.images %}
+          <div class="product-custom__thumbnail">
+            <a
+              href="{{ image | img_url: '1024x1024' }}"
+              data-lightbox="product-gallery"
+              data-id="{{ forloop.index }}">
+              <img
+                src="{{ image | img_url: '100x100' }}"
+                data-small-src="{{ image | img_url: '100x100' }}"
+                data-large-src="{{ image | img_url: '480x480' }}"
+                data-huge-src="{{ image | img_url: '1024x1024' }}"
+                alt="{{ image.alt | escape }}" />
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+</div>
