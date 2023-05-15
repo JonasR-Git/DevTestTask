@@ -2,15 +2,18 @@
 {{ 'product-custom.js' | asset_url | script_tag }}
 
 <head>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet"/>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 
 <div class="product-custom__container">
   <div class="product-custom__photos-details-wrapper">
-    <!--Image Gallery -->
+    <!--Image Gallery for screen sizes > 1200px -->
     <div class="product-custom__photos">
       <div class="product-custom__main-image-button-container">
         <div class="product-custom__main-image-container">
@@ -51,6 +54,24 @@
         {% endfor %}
       </div>
     </div>
+
+    <!-- Swiper Js gallery Section for small devices < 1200px -->
+    <div class="product-custom__thumbnails-swiper-container swiper" id="thumbnailsContainerSmall">
+      <div class="swiper-wrapper">
+        <!-- Loop to generate slides -->
+        {% for image in product.images %}
+          <div class="swiper-slide product-custom__thumbnail-swiper">
+            <a
+              href="{{ image | img_url: '1024x1024' }}"
+              data-lightbox="product-gallery"
+              data-id="{{ forloop.index }}">
+              <img src="{{ image | img_url: '350x350' }}" alt="{{ image.alt | escape }}" />
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="product-custom__swiper-pagination swiper-pagination"></div>
 
     <!--Details Box -->
     <div class="product-custom__details">
@@ -110,10 +131,10 @@
         src="{{ svgUrl }}"
         alt="Optional alt text"
         class="product-custom__award-image">
-        <div class="product-custom__award-text-container">
-            <h3 class="product-custom__award-heading">{{ settings.award_heading1 }}</h3>
-            <p class="product-custom__award-description">{{ settings.award_description1 }}</p>
-          </div>
+      <div class="product-custom__award-text-container">
+        <h3 class="product-custom__award-heading">{{ settings.award_heading1 }}</h3>
+        <p class="product-custom__award-description">{{ settings.award_description1 }}</p>
+      </div>
     </div>
     <div class="product-custom__award-container">
       {% assign svgUrl = 'award.svg' | asset_url %}
@@ -121,10 +142,10 @@
         src="{{ svgUrl }}"
         alt="Optional alt text"
         class="product-custom__award-image">
-        <div class="product-custom__award-text-container">
-            <h3 class="product-custom__award-heading">{{ settings.award_heading2 }}</h3>
-            <p class="product-custom__award-description">{{ settings.award_description2 }}</p>
-          </div>
+      <div class="product-custom__award-text-container">
+        <h3 class="product-custom__award-heading">{{ settings.award_heading2 }}</h3>
+        <p class="product-custom__award-description">{{ settings.award_description2 }}</p>
+      </div>
     </div>
     <div class="product-custom__award-container">
       {% assign svgUrl = 'award.svg' | asset_url %}
@@ -132,10 +153,10 @@
         src="{{ svgUrl }}"
         alt="Optional alt text"
         class="product-custom__award-image">
-        <div class="product-custom__award-text-container">
-            <h3 class="product-custom__award-heading">{{ settings.award_heading3 }}</h3>
-            <p class="product-custom__award-description">{{ settings.award_description3 }}</p>
-          </div>
+      <div class="product-custom__award-text-container">
+        <h3 class="product-custom__award-heading">{{ settings.award_heading3 }}</h3>
+        <p class="product-custom__award-description">{{ settings.award_description3 }}</p>
+      </div>
     </div>
   </div>
 
@@ -143,5 +164,4 @@
   <div class="product-custom__description">
     {{ product.description }}
   </div>
-</div>
 </div>
