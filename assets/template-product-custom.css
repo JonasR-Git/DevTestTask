@@ -263,6 +263,14 @@
     height: 10px;
 }
 
+.product-custom__swiper-pagination span {
+    width: 10px;
+    height: 10px;
+    background: #E5E5E5 ;
+    opacity: 1;
+}
+
+
 @media (min-width: 1200px) {
 
     #thumbnailsContainerSmall {
