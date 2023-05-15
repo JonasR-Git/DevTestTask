@@ -10,29 +10,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function initializeSwiper() {
         swiper = new Swiper('.product-custom__thumbnails-swiper-container', {
-          centeredSlides: true,
-          spaceBetween: 7,
-          slidesPerView: 'auto',
-          loop: true,
-          pagination: {
-            el: '.swiper-pagination'
-          },
-          breakpoints: {
-            460: {
-              spaceBetween: 7,
+            centeredSlides: true,
+            spaceBetween: 7,
+            slidesPerView: 'auto',
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination'
             },
-            640: {
-              spaceBetween: 20,
-            },
-            768: {
-              spaceBetween: 40,
-            },
-            1200: {
-              spaceBetween: 60,
-            },
-          }
+            breakpoints: {
+                460: {
+                    spaceBetween: 7,
+                },
+                640: {
+                    spaceBetween: 20,
+                },
+                768: {
+                    spaceBetween: 40,
+                },
+                1200: {
+                    spaceBetween: 60,
+                },
+            }
         });
-      }
+    }
+
+    function destroySwiper() {
+        if (swiper)  {
+            swiper.destroy();
+            swiper = null;
+        }
+    }
 
     prevButton.addEventListener('click', () => {
         thumbnails.unshift(thumbnails.pop()); // Moves the last element to the start
@@ -44,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
         updateImages()
     });
 
-    function updateImages(){
+    function updateImages() {
         //set huge image for lightbox
         mainImageLink.href = thumbnails[0].dataset.hugeSrc;
         // set src to large to be displayed big. Main Image is the first one in the thumbnails array
@@ -53,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // iterate throught the thumbnails and set display none for every one > index 4, so only main image + 4 small previews are visible
         thumbnails.forEach((img, index) => {
-            if(index >= 1 && index <= 4) {
+            if (index >= 1 && index <= 4) {
                 // select the div from the image
                 img.parentElement.parentElement.style.display = 'block';
                 thumbnailsContainer.appendChild(img.parentElement.parentElement);
@@ -65,10 +72,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Check screen size and initialize or destroy the Swiper accordingly 
     function handleScreenSize() {
-        if (window.innerWidth < 1200){
+        if (window.innerWidth < 1200) {
             initializeSwiper();
         } else {
-            //remove swiper
+            destroySwiper();
         }
     }
 
