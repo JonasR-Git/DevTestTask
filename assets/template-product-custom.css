@@ -256,6 +256,10 @@
     margin: 83px 0 155px;
 }
 
+.product-custom__thumbnails-swiper-container {
+    width: 100%;
+}
+
 .product-custom__swiper-pagination {
     bottom: -20px;
     position: relative !important;
