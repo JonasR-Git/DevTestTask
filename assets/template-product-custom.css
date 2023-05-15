@@ -32,4 +32,5 @@
     border-radius: 3px;
 }
 
-.product-custom_thumbnail
+.product-custom__thumbnail a, 
+.product-custom__main-image-container a
