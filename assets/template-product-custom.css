@@ -298,6 +298,10 @@
     #thumbnailsContainerLarge {
         display: flex;
     }
+
+    #SwiperPagination {
+        display: none;
+    }
 }
 
 @media (max-width: 1199px) {
@@ -320,6 +324,10 @@
     #thumbnailsContainerSmall {
         display: flex;
         width: 90%;
+    }
+
+    #SwiperPagination {
+        display: ;
     }
 }
 
