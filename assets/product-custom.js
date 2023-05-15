@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-
+    // Check screen size and initialize or destroy the Swiper accordingly 
     
 
     // Initial set the right display none and block
