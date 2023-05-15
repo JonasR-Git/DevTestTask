@@ -121,3 +121,11 @@
     display: inline-block;
     margin-right: 10px;
 }
+
+.product-custom__dot--available {
+    background-color: #25a525;
+}
+
+.product-custom__dot--not-available {
+    background-color: red;
+}
