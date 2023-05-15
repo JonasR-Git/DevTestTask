@@ -350,7 +350,8 @@
     }
 
     .product-custom__add-to-cart {
-        width: 324px;
+        max-width: 324px;
+        width: 85vw;
         font-size: 16px;
         line-height: 19px;
     }
