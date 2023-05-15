@@ -95,5 +95,8 @@
 }
 
 .producct-custom__availability {
+    margin: 0 0 37px;
+    text-align: left;
+    font-weight: 500;
     
 }
