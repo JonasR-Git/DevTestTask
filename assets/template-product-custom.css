@@ -36,3 +36,17 @@
 .product-custom__main-image-container a {
     height: 100%;
 }
+
+.product-custom__main-image{
+    width: 480px;
+    height: 480px;
+    border-radius: 5px;
+}
+
+.product-custom__image-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    align-items: center;
+    height: 23px;
+}
