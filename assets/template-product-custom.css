@@ -50,3 +50,22 @@
     align-items: center;
     height: 23px;
 }
+
+.product-custom__arrow {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    cursor: pointer;
+    padding: 2px;
+    width: 10px;
+    height: 10px;
+    display: block !important;
+}
+
+.product-custom__arrow--prev {
+    transform: rotate(135deg);
+    margin-right: 17px;
+}
+
+.product-custom__arrow--next {
+    transform: rotate(-45deg);
+}
