@@ -74,6 +74,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Initial set the right display none and block
     updateImages();
+    // Initial check if Swiper is needed
+    handleScreenSize();
 
     // use function handleScreenSize on resize event
     window.addEventListener('resize', handleScreenSize);
