@@ -130,4 +130,8 @@
     background-color: red;
 }
 
-
+.product-custom__price-container {
+    display: flex;
+    gap: 20px;
+    margin: 0 0 18px;
+}
