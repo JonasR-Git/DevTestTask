@@ -20,5 +20,6 @@
     display: flex;
     flex-direction: column;
     margin-right: 20px;
-    height: ;
+    gap: 15px;
+    justify-content: center;
 }
