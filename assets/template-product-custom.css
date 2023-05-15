@@ -5,7 +5,7 @@
     margin: 43px auto 0;
 }
 
-.product-custom__photos-details-wrapper{
+.product-custom__photos-details-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@
     flex-direction: row-reverse;
 }
 
-.product-custom__thumbnails-container{
+.product-custom__thumbnails-container {
     display: flex;
     flex-direction: column;
     margin-right: 20px;
@@ -25,7 +25,7 @@
     justify-content: center;
 }
 
-.product-custom__thumbnail{
+.product-custom__thumbnail {
     width: 100px;
     height: 100px;
     overflow: hidden;
@@ -33,13 +33,13 @@
     border-radius: 3px;
 }
 
-.product-custom__thumbnail a, 
+.product-custom__thumbnail a,
 .product-custom__main-image-container a {
     display: block;
     height: 100%;
 }
 
-.product-custom__main-image{
+.product-custom__main-image {
     width: 480px;
     height: 480px;
     border-radius: 5px;
@@ -172,7 +172,7 @@
     line-height: 30px;
     font-family: 'Montserrat';
     letter-spacing: 0px;
-    color: #000000; 
+    color: #000000;
     margin: 0 0 12px 0;
 }
 
@@ -270,7 +270,7 @@
 .product-custom__swiper-pagination span {
     width: 10px;
     height: 10px;
-    background: #E5E5E5 ;
+    background: #E5E5E5;
     opacity: 1;
 }
 
@@ -279,7 +279,7 @@
     height: 350px !important;
 }
 
-.product-custom__thumbnail-swiper a img{
+.product-custom__thumbnail-swiper a img {
     border-radius: 5px;
 }
 
@@ -377,8 +377,8 @@
         margin-bottom: 21px;
     }
 
-    .product-custom__award-text-container{
-        justify-content: space-between; 
+    .product-custom__award-text-container {
+        justify-content: space-between;
     }
 
     .product-custom__old-price,
@@ -401,13 +401,10 @@
     }
 }
 
-    @media (max-width: 360px) {
-        .product-custom__details-container {
-            margin: 25px 12px;
-            max-width: 324px;
-            width: 85%;
-        }
-    } 
-
-
-
+@media (max-width: 360px) {
+    .product-custom__details-container {
+        margin: 25px auto;
+        max-width: 324px;
+        width: 85%
+    }
+}
