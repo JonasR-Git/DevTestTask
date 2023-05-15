@@ -21,6 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
         mainImage.src = thumbnails[0].CDATA_SECTION_NODE.largeSrc;
         mainImage.alt = thumbnails[0].alt;
 
-        
+        // iterate throught the thumbnails and remove every
     }
 }
