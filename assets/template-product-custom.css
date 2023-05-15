@@ -268,7 +268,18 @@
 }
 
 @media (max-width: 1199px) {
+    .product-custom__photos-details-wrapper {
+        flex-direction: column;
+    }
     
+    .product-custom__details {
+        margin-left: 0;
+    }
+
+    .product-custom__extra-info {
+        width: 90%;
+    }
+
     #thumbnailsContainerLarge {
         display: none;
     }
