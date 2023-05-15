@@ -1,4 +1,4 @@
 development:
-  password: ${{ secrets.password }}
+  password: ${{ secrets.PASSWORD }}
   theme_id: "149455765833"
   store: bd60e9.myshopify.com
