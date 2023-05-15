@@ -232,3 +232,14 @@
     color: #000;
     margin: 0;
 }
+
+.product-custom__award-description {
+    text-align: left;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Montserrat';
+    letter-spacing: 0px;
+    color: #383838;
+    margin: 0;
+}
