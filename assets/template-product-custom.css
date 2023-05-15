@@ -113,3 +113,11 @@
 .product-custom__availability--not-available {
     color: red;
 }
+
+.product-custom__availability-dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
