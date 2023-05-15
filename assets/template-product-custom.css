@@ -1,1 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+.product-custom__container {
+    max-width: 1125px;
+    margin: 43px auto 0;
+}
