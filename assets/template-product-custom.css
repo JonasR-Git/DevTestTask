@@ -34,6 +34,7 @@
 
 .product-custom__thumbnail a, 
 .product-custom__main-image-container a {
+    display: block;
     height: 100%;
 }
 
