@@ -1584,6 +1584,42 @@
         "id": "product_add_to_cart",
         "label": "Add to card Text",
         "default": "In den Einkaufswagen"
+      },
+      {
+        "type": "text",
+        "id": "award_heading1",
+        "label": "Award Heading 1",
+        "default": "100% Qualität"
+      },
+      {
+        "type": "text",
+        "id": "award_heading2",
+        "label": "Award Heading 2",
+        "default": "100% Qualität"
+      },
+      {
+        "type": "text",
+        "id": "award_heading3",
+        "label": "Award Heading 3",
+        "default": "100% Qualität"
+      },
+      {
+        "type": "text",
+        "id": "award_description1",
+        "label": "Award Description 1",
+        "default": "Dank weichem Silikon"
+      },
+      {
+        "type": "text",
+        "id": "award_description2",
+        "label": "Award Description 2",
+        "default": "Dank weichem Silikon"
+      },
+      {
+        "type": "text",
+        "id": "award_description3",
+        "label": "Award Description 3",
+        "default": "Dank weichem Silikon"
       }
     ]
   }
