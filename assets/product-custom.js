@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function updateImages(){
-        mainImageLink.href = thumbnails[0]
+        mainImageLink.href = thumbnails[0].CDATA_SECTION_NODE.hugeSrc;
+        
     }
 }
