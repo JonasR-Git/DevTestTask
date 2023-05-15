@@ -18,9 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateImages(){
         //set huge image for lightbox
-        mainImageLink.href = thumbnails[0].CDATA_SECTION_NODE.hugeSrc;
+        mainImageLink.href = thumbnails[0].dataset.hugeSrc;
         // set src to large to be displayed big. Main Image is the first one in the thumbnails array
-        mainImage.src = thumbnails[0].CDATA_SECTION_NODE.largeSrc;
+        mainImage.src = thumbnails[0].dataset.largeSrc;
         mainImage.alt = thumbnails[0].alt;
 
         // iterate throught the thumbnails and set display none for every one > index 4, so only main image + 4 small previews are visible
