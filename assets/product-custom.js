@@ -76,5 +76,5 @@ document.addEventListener("DOMContentLoaded", function () {
     updateImages();
 
     // use function handleScreenSize on resize event
-    window.addEventListener('resize', handleScreenSize)
+    window.addEventListener('resize', handleScreenSize);
 });
