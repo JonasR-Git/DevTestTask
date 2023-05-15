@@ -77,3 +77,8 @@
 .product-custom__arrow--next {
     transform: rotate(-45deg);
 }
+
+.product-custom__add-to-cart {
+    background-color: #1F47FF;
+    width: ;
+}
