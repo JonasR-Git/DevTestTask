@@ -48,4 +48,53 @@
         {% endfor %}
       </div>
     </div>
+
+    <div class="product-custom__details">
+      <div class="product-custom__details-container">
+        <h1 class="product-custom__title">{{ product.title }}</h1>
+        <h2 class="product-custom__subtitle">{{ settings.product_subtitle }}</h2>
+
+        <div class="product-custom__price-container">
+          {% if product.compare_at_price_max > product.price %}
+            <p class="product-custom__old-price">{{ product.compare_at_price_max | money }}</p>
+            <p class="product-custom__new-price">{{ product.price | money }}
+              <span class="product-custom__price-note">inkl. MwSt</span>
+            </p>
+          {% else %}
+            <p class="product-custom__old-price">{{ product.price | money }}
+              <span class="product-custom__price-note">inkl. MwSt</span>
+            </p>
+          {% endif %}
+        </div>
+
+        {% if product.available %}
+          <p class="product-custom__availability product-custom__availability--available">
+            <span class="product-custom__availability-dot product-custom__dot--available"></span>
+            {{ settings.availability_text_available }}</p>
+        {% else %}
+          <p class="product-custom__availability product-custom__availability--not-available">
+            <span class="product-custom__availability-dot product-custom__dot--not-available"></span>
+            {{ settings.availability_text_not_available }}</p>
+        {% endif %}
+        <form
+          method="post"
+          action="/cart/add"
+          class="product-custom__cart-form">
+          <input
+            type="hidden"
+            name="id"
+            value="{{ product.variants.first.id }}" />
+          <input
+            type="hidden"
+            id="quantity"
+            name="quantity"
+            value="1" />
+          <button
+            type="submit"
+            name="add"
+            class="product-custom__add-to-cart">{{ settings.product_add_to_cart }}</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
