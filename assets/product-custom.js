@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const mainImage = document.querySelector('.product-custom__main-image');
     const mainImageLink = document.querySelector('.product-custom__main-image-container a');
 
+    let swiper = null;
+
     function initializeSwiper() {
         swiper = new Swiper('.product-custom__thumbnails-swiper-container', {
           centeredSlides: true,
@@ -63,5 +65,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Initial set the right display none and block
     updateImages();
-    initializeSwiper();
 });
