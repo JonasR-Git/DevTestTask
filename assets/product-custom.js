@@ -6,5 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const mainImage = document.querySelector('.product-custom__main-image');
     const mainImageLink = document.querySelector('.product-custom__main-image-container a');
 
-    prevButton.addEventListener('click')
+    prevButton.addEventListener('click', () =>{
+        
+    })
 }
