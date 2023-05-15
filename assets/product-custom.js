@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const mainImage = document.querySelector('.product-custom__main-image');
     const mainImageLink = document.querySelector('.product-custom__main-image-container a');
 
-    prevButton.addEventListener('click', () =>{
+    prevButton.addEventListener('click', () => {
         thumbnails.unshift(thumbnails.pop()); // Moves the last element to the start
     });
 
-    nextButton.addEventListener('click', () =>{
+    nextButton.addEventListener('click', () => {
         thumbnails.push(thumbnails.shift()); // Moves the first element to the end
     });
 
@@ -22,8 +22,14 @@ document.addEventListener("DOMContentLoaded", function () {
         mainImage.alt = thumbnails[0].alt;
 
         // iterate throught the thumbnails and set display none for every one > index 4, so only main image + 4 small previews are visible
-        thumbnails.forEach((img, index) =>{
-            
-        })
+        thumbnails.forEach((img, index) => {
+            if(index >= 1 && index <= 4) {
+                // select the div from the image
+                img.parentElement.parentElement.style.display = 'block';
+                thumbnailsContainer.appendChild(img.parentElement.parentElement);
+            } else {
+                img.parentElement.parentElement.style.display = 'none'
+            }
+        });
     }
-}
+});
