@@ -8,6 +8,7 @@
 
 <div class="product-custom__container">
   <div class="product-custom__photos-details-wrapper">
+    <!--Image Gallery -->
     <div class="product-custom__photos">
       <div class="product-custom__main-image-button-container">
         <div class="product-custom__main-image-container">
@@ -49,6 +50,7 @@
       </div>
     </div>
 
+    <!--Details Box -->
     <div class="product-custom__details">
       <div class="product-custom__details-container">
         <h1 class="product-custom__title">{{ product.title }}</h1>
@@ -97,4 +99,47 @@
       </div>
     </div>
   </div>
+
+  <!--Awards Box -->
+  <div class="product-custom__extra-info">
+    <div class="product-custom__award-container">
+      {% assign svgUrl = 'award.svg' | asset_url %}
+      <img
+        src="{{ svgUrl }}"
+        alt="Optional alt text"
+        class="product-custom__award-image">
+        <div class="product-custom__award-text-container">
+            <h3 class="product-custom__award-heading">{{ settings.award_heading1 }}</h3>
+            <p class="product-custom__award-description">{{ settings.award_description1 }}</p>
+          </div>
+    </div>
+    <div class="product-custom__award-container">
+      {% assign svgUrl = 'award.svg' | asset_url %}
+      <img
+        src="{{ svgUrl }}"
+        alt="Optional alt text"
+        class="product-custom__award-image">
+        <div class="product-custom__award-text-container">
+            <h3 class="product-custom__award-heading">{{ settings.award_heading2 }}</h3>
+            <p class="product-custom__award-description">{{ settings.award_description2 }}</p>
+          </div>
+    </div>
+    <div class="product-custom__award-container">
+      {% assign svgUrl = 'award.svg' | asset_url %}
+      <img
+        src="{{ svgUrl }}"
+        alt="Optional alt text"
+        class="product-custom__award-image">
+        <div class="product-custom__award-text-container">
+            <h3 class="product-custom__award-heading">{{ settings.award_heading3 }}</h3>
+            <p class="product-custom__award-description">{{ settings.award_description3 }}</p>
+          </div>
+    </div>
+  </div>
+
+  <!--Description Box -->
+  <div class="product-custom__description">
+    {{ product.description }}
+  </div>
+</div>
 </div>
