@@ -258,13 +258,24 @@
 
 @media (min-width: 1200px) {
 
-
     #thumbnailsContainerSmall {
         display: none;
     }
 
     #thumbnailsContainerLarge {
         display: flex;
+    }
+}
+
+@media (max-width: 1199px) {
+    
+    #thumbnailsContainerLarge {
+        display: none;
+    }
+
+    #thumbnailsContainerSmall {
+        display: flex;
+        width: 90%;
     }
 }
 
