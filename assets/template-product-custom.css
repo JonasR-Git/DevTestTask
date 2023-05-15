@@ -349,6 +349,7 @@
         margin: 26px 12px 25px 14px;
     }
 
+    .product-custom__cart-form,
     .product-custom__add-to-cart {
         max-width: 324px;
         width: 85vw;
@@ -378,6 +379,21 @@
 
     .product-custom__award-text-container{
         justify-content: space-between; 
+    }
+
+    .product-custom__old-price,
+    .product-custom__new-price,
+    .product-custom__availability,
+    .product-custom__award-heading,
+    .product-custom__award-description {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .product-custom__award-image {
+        width: 48px;
+        height: 48px;
+        margin-right: 25px;
     }
 
     #thumbnailsContainerSmall {
