@@ -75,5 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initial set the right display none and block
     updateImages();
 
-    // use function handleScreenSize on Sc
+    // use function handleScreenSize on resize event
+    window.addEventListener('resize', handleScreenSize)
 });
