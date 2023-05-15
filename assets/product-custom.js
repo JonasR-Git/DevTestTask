@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const mainImageLink = document.querySelector('.product-custom__main-image-container a');
 
     prevButton.addEventListener('click', () =>{
+        thumbnails.unshift(thumbnails.pop());
         
     })
 }
