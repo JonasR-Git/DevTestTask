@@ -80,5 +80,9 @@
 
 .product-custom__add-to-cart {
     background-color: #1F47FF;
-    width: ;
+    width: 424px;
+    height: 52px;
+    border-radius: 3px;
+    cursor: pointer;
+    
 }
