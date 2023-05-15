@@ -10,3 +10,9 @@
     justify-content: center;
     align-items: center;
 }
+
+.product-custom__photos {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+}
