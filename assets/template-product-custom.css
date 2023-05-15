@@ -146,3 +146,11 @@
     color: #000000;
     margin: 0;
 }
+
+.product-custom__old-price {
+    text-decoration: line-through;
+}
+
+.product-custom__new-price {
+    color: #1F47FF;
+}
